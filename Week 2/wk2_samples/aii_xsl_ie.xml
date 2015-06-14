@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="aii.xsl" type="text/xsl"?>
+<!--<?xml-stylesheet href="aii.xsl" type="application/xml"?>-->
+<aii>
+  <kennisgebied richting="in">
+    <naam>Netwerken en Internet</naam>
+    <coordinator>
+      <docent>Rob Verhoef</docent>
+      <kamer>G555</kamer> 
+      <email/>
+    </coordinator>	     
+  </kennisgebied>
+  <kennisgebied richting="ti">
+    <naam>Embedded Software</naam>
+    <coordinator>
+      <docent>Bob Verlaat</docent>
+      <kamer>G666</kamer> 
+      <email>bverlaat@avans.nl</email>
+    </coordinator>	     
+  </kennisgebied>
+</aii>

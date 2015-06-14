@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:element name="aii">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="kennisgebied" type="kennisgebiedType" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+<xs:complexType name="coordinatorType">
+  <xs:sequence>
+    <xs:element ref="docent"/>
+    <xs:element ref="kamer" minOccurs="0"/>
+    <xs:element ref="email" minOccurs="0"/>
+  </xs:sequence>
+</xs:complexType>
+
+<xs:element name="docent" type="xs:string"/> 	
+<xs:element name="email" type="xs:string"/>
+<xs:element name="kamer" type="xs:string"/>
+
+<xs:complexType name="kennisgebiedType">
+  <xs:sequence>
+    <xs:element ref="naam"/>
+    <xs:element name="coordinator" type="coordinatorType"/>
+  </xs:sequence>
+
+  <xs:attribute name="richting" use="required">
+    <xs:simpleType>
+      <xs:restriction base="xs:NMTOKEN">
+        <xs:enumeration value="in"/>
+        <xs:enumeration value="ti"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+</xs:complexType>
+
+<xs:element name="naam" type="xs:string"/>
+
+</xs:schema>

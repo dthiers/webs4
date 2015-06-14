@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+<xsd:element name="leden">
+  <xsd:complexType>
+    <xsd:sequence>
+	  <xsd:element name="naam" type="naamType" maxOccurs="100"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:element>
+
+<xsd:complexType name="naamType">
+  <xsd:all>
+    <xsd:element name="voornaam" type="xsd:string"/>
+    <xsd:element name="tussenvoegsel" type="xsd:string" minOccurs="0"/>
+    <xsd:element name="achternaam" type="xsd:string"/>
+  </xsd:all>
+</xsd:complexType>
+
+</xsd:schema>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fo:root xmlns:fo="http://www.w3.org/1999/XSL/Format"><fo:layout-master-set><fo:simple-page-master master-name="first" page-height="11in" page-width="8.5in" margin-top="1in" margin-bottom="1in" margin-left="1in" margin-right="1in"><fo:region-body/></fo:simple-page-master></fo:layout-master-set><fo:page-sequence master-reference="first"><fo:flow flow-name="xsl-region-body">
+  <fo:block>Southern Corn Bread</fo:block>
+  
+    <fo:block>
+      1 cup
+      flour
+    </fo:block>
+    <fo:block>
+      4 tablespoons
+      Royal Baking Powder
+    </fo:block>
+    <fo:block>
+      1/2 teaspoon
+      salt
+    </fo:block>
+    <fo:block>
+      1 cup
+      corn meal
+    </fo:block>
+    <fo:block>
+      11/2 cups
+      whole milk
+    </fo:block>
+    <fo:block>
+      4 tablespoons
+      melted butter
+    </fo:block>
+  
+     
+  <fo:block>
+    Sift flour, baking powder, sugar &amp; salt together.
+    Add 1 cup corn meal.
+    
+      Beat egg in cup and add beaten egg and 11/2 cups whole
+       milk to make a batter. Stir well.
+    
+    
+      Add melted shortening and beat until light and thoroughly mixed.
+    
+    
+      Pour into greased shallow pan or greased muffin rings.
+    
+    
+      Bake in hot oven at 425
+ F for
+      25 minutes.
+    
+    
+      Cut into squares if cooked in shallow pan.
+    
+  </fo:block>
+     
+  <fo:block>
+    After my mother-in-law Marjorie Anderson died,
+    Beth and I found this recipe written on the "extra recipes"
+    page in a local cookbook in her cupboard.
+    This was published by the The Episcopal Churchwomen,
+    Church of Ascension, Mt. Sterling,
+    Kentucky.
+  </fo:block>
+</fo:flow></fo:page-sequence></fo:root>

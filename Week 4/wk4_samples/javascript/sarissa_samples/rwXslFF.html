@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Processing XML/XSLT with JavaScript</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<script type="text/javascript">
+
+//Create an XSLT processor instance
+var processor = new XSLTProcessor();
+//Create an empty XML document for the XSLT transform
+var transform = document.implementation.createDocument("", "", null);
+//Create an empty XML document for the SOURCE xml
+var source = document.implementation.createDocument("", "", null);
+
+function xmlView(xslFile) {
+	transform = document.implementation.createDocument("", "", null);
+	//Load the XSLT
+	transform.onload = loadTransform;
+	transform.load(xslFile);
+}
+
+//Triggered once the XSLT document is loaded
+function loadTransform(){
+	//Attach the transform to the processor
+	processor = new XSLTProcessor();
+	processor.importStylesheet(transform);
+	source = document.implementation.createDocument("", "", null);
+	source.load("ADRESBOEK.xml");
+	source.onload = runTransform;
+}
+
+//Triggered once the source document is loaded
+function runTransform(){
+  //Run the transform, creating a fragment output subtree that
+  //can be inserted back into the main page document object (given
+  //in the second argument)
+  var frag = processor.transformToDocument(source, document);
+  var serializer = new XMLSerializer();
+  var out = serializer.serializeToString(frag);
+  document.getElementById('result').innerHTML = out;
+}
+
+function cleardiv() {
+	document.getElementById('result').innerHTML = 'en weer een schone lei ...';
+}
+
+</script>
+</head>
+
+<body>
+<h3>dynamisch xml-xsl vertalen onder FF ...</h3>
+<div id="result">hier gebeurt het ...</div>
+<form>
+  <input type="button" value="schone lei" onClick="cleardiv()" />
+  <input type="button" value="sorteren per adres-id" onClick="xmlView('adresboek_adresid.xsl')" />
+  <input type="button" value="sorteren per familienaam" onClick="xmlView('adresboek_famnaam.xsl')" />
+</form>
+</body>
+</html>

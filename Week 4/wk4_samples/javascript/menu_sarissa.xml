@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<menu>
+	<item label="XSL onder IE" target="sarissa_samples/rwXslIE.html" />
+	<item label="XSL onder FF" target="sarissa_samples/rwXslFF.html" />
+	<item label="XSL met Sarissa" target="sarissa_samples/rwXslSarissa.html" />
+</menu>

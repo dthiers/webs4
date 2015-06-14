@@ -1,0 +1,18 @@
+<!ELEMENT biography (paragraph*)>
+
+<!ELEMENT paragraph (definition*)>
+
+<!ELEMENT definition (#PCDATA|name|date|profession|emphasize|term)*>
+
+<!ELEMENT name (first_name?, last_name?)>
+<!ELEMENT first_name (#PCDATA)>
+<!ELEMENT last_name (#PCDATA)>
+
+<!ELEMENT date (month, day, year)>
+<!ELEMENT month (#PCDATA)>
+<!ELEMENT day (#PCDATA)>
+<!ELEMENT year (#PCDATA)>
+
+<!ELEMENT profession (#PCDATA)>
+<!ELEMENT emphasize (#PCDATA)>
+<!ELEMENT term (#PCDATA)>

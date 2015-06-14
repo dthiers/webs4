@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<order status="invoice">
+	<date>17-04-2015</date>
+	<duedate>01-05-2015</duedate>
+	<invoice>2015999</invoice>
+	<customer>
+		<company>Bedrijf</company>
+		<contact>Dhr. H. van der Test</contact>
+		<address>Probeerlaan 1</address>
+		<postalcode>1234 AB</postalcode>
+		<city>Nergenshuizen</city>
+	</customer>
+	<lineitem>
+		<description>Website</description>
+		<price>500</price>
+		<quantity>1</quantity>
+		<subtotal>500</subtotal>
+	</lineitem>
+	<lineitem>
+		<description>Extra functionaliteit: nieuwsbrieven, fotoalbum, gebruikersregistratie</description>
+		<price>59</price>
+		<quantity>3</quantity>
+		<subtotal>177</subtotal>
+	</lineitem>
+	<subtotal>677</subtotal>
+	<tax>142.17</tax>
+	<total>819.17</total>
+</order>

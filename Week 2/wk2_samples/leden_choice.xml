@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LEDEN>
+  <vta>
+    <voornaam>Rob</voornaam>
+    <achternaam>Willemsen</achternaam>
+  </vta>
+  
+  <vta>
+    <voornaam>Frans</voornaam>
+    <tussenvoegsel>van</tussenvoegsel>
+    <achternaam>Seggelen</achternaam>
+  </vta>
+  <atv>
+    <achternaam>Seggelen</achternaam>
+    <tussenvoegsel>van</tussenvoegsel>
+    <voornaam>Frans</voornaam>
+  </atv>
+ 
+  <atv>
+    <achternaam>Willemsen</achternaam>
+    <voornaam>Rob</voornaam>
+  </atv>
+</LEDEN>

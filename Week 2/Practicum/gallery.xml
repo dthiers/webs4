@@ -1,0 +1,19 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<gallery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="starwars.xsd">
+
+  <character xsi:type="starWarsEntity">
+    <name>Test</name>
+    <species>Test</species>
+    <language>Test</language>
+    <home>Test</home>
+  </character>
+
+  <character xsi:type="wookieType">
+    <name>Test1</name>
+    <species>Test1</species>
+    <language>Test1</language>
+    <home>Test1</home>
+    <battleCry>Test1</battleCry>
+  </character>
+</gallery>

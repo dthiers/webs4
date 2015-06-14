@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Processing XML/XSLT with JavaScript</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<script type="text/javascript">
+
+var xml = new ActiveXObject("Microsoft.XMLDOM");
+xml.async = false;
+xml.load("adresboek.xml");
+
+function xmlView(xslFile) {
+	var xsl = new ActiveXObject("Microsoft.XMLDOM");
+	xsl.async = false;
+	xsl.load(xslFile);
+	document.getElementById('result').innerHTML = xml.transformNode(xsl);
+}
+
+function cleardiv() {
+	document.getElementById('result').innerHTML = 'en weer een schone lei ...';
+}
+
+</script>
+</head>
+
+<body>
+<h3>dynamisch xml-xsl vertalen onder IE (Microsoft.XMLDOM) ...</h3>
+<div id="result">hier gebeurt het ...</div>
+<form>
+  <input type="button" value="schone lei" onClick="cleardiv()" />
+  <input type="button" value="sorteren per adres-id" onClick="xmlView('adresboek_adresid.xsl')" />
+  <input type="button" value="sorteren per familienaam" onClick="xmlView('adresboek_famnaam.xsl')" />
+</form>
+</body>
+</html>

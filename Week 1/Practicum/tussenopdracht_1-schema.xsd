@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:complexType name="naamType">
+      <xs:sequence>
+        <xs:element name="voornaam" type="xs:string"/>
+        <xs:element name="familienaam" type="xs:string"/>
+        <xs:element name="bijnaam" type="xs:string" minOccurs="0"/>
+      </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="geboorteType">
+    <xs:sequence>
+      <xs:element name="dag"/>
+      <xs:element name="maand"/>
+      <xs:element name="jaar"/>
+    </xs:sequence>
+  </xs:complexType>
+
+
+  <xs:element name="adresboek">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="contact" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id" type="xs:integer"/>
+              <xs:element name="naam" type="naamType" />
+              <xs:element name="geboortedatum" type="geboorteType" minOccurs="0"/>
+              <xs:element name="tel" minOccurs="0"/>
+              <xs:element name="email" minOccurs="0"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element> <!-- -->
+
+</xs:schema>

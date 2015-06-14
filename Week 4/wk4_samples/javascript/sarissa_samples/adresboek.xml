@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+
+<!--<?xml-stylesheet href="adresboek_3a.xsl" type="text/xsl"?>-->
+<adresboek>
+  <persoon adresid="1">
+    <naam>
+      <voornaam>Joske</voornaam>
+      <famnaam>Vermeulen</famnaam>
+    </naam>
+    <gebdat>
+      <dag>19</dag>
+      <maand>5</maand>
+      <jaar>1986</jaar>
+    </gebdat>
+    <tel>016/589652</tel>
+    <email>joske@vermeulen.com</email>
+  </persoon>
+  <persoon adresid="2">
+    <naam>
+      <voornaam>Davy</voornaam>
+      <famnaam>Bosmans</famnaam>
+      <bijnaam>den Bossie</bijnaam>
+    </naam>
+    <tel>016/321954</tel>
+  </persoon>
+  <persoon adresid="3">
+    <naam>
+      <voornaam>Sjefke</voornaam>
+      <famnaam>Noygedagt</famnaam>
+      <bijnaam>Le Penseur</bijnaam>
+    </naam>
+    <gebdat>
+      <dag>09</dag>
+      <maand>09</maand>
+      <jaar>1999</jaar>
+    </gebdat>
+    <tel>06/54689234</tel>
+    <email>penseur@gmail.com</email>
+  </persoon>
+  <persoon adresid="15">
+    <naam>
+      <voornaam>Willem</voornaam>
+      <famnaam>Willemsen</famnaam>
+      <bijnaam>Wimpie</bijnaam>
+    </naam>
+    <gebdat>
+      <dag>31</dag>
+      <maand>02</maand>
+      <jaar>1990</jaar>
+    </gebdat>
+    <tel>040/9876543</tel>
+    <email>willem@hotmail.com</email>
+  </persoon>
+  <persoon adresid="9">
+    <naam>
+      <voornaam>Michael</voornaam>
+      <famnaam>Jackson</famnaam>
+      <bijnaam>Whacko Jacko</bijnaam>
+    </naam>
+    <gebdat>
+      <dag>12</dag>
+      <maand>5</maand>
+      <jaar>1962</jaar>
+    </gebdat>
+    <tel></tel>
+    <email>michael@whacko.com</email>
+  </persoon>
+</adresboek>	

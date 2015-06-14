@@ -1,0 +1,16 @@
+kennisgebied {
+    display: block;
+    font-size: 16pt;
+    font-weight: bold;
+/*    border: 1px solid #336699;*/
+    color: blue;
+    margin: 10px;
+}
+
+coordinator {
+    display: block;
+    font-size: 12pt;
+    font-style: italic;
+    color: red;
+}
+

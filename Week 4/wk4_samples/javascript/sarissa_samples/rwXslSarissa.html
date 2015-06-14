@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Processing XML/XSLT with JavaScript</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<script type="text/javascript" src="sarissa/sarissa.js"></script>
+<script type="text/javascript">
+
+//var xml = new ActiveXObject("Microsoft.XMLDOM");
+var xml = Sarissa.getDomDocument();
+xml.async = false;
+xml.load("adresboek.xml");
+
+function xmlView(xslFile) {
+	//var xsl = new ActiveXObject("Microsoft.XMLDOM");
+	var xsl = Sarissa.getDomDocument();
+	xsl.async = false;
+	xsl.load(xslFile);
+	var xslt = new XSLTProcessor();
+	xslt.importStylesheet(xsl);
+	//document.getElementById('result').innerHTML = xml.transformNode(xsl);
+	//alert(xml);
+	var newDoc = xslt.transformToDocument(xml);
+	//var out = Sarissa.serialize(newDoc));
+	var out = new XMLSerializer().serializeToString(newDoc);
+	//alert(out);
+	document.getElementById('result').innerHTML = out;
+}
+
+function cleardiv() {
+	document.getElementById('result').innerHTML = 'en weer een schone lei ...';
+}
+
+function testSarissa() {
+	var oDomDoc = Sarissa.getDomDocument();
+	var xmlString = "<root>my xml!</root>";
+	oDomDoc = (new DOMParser()).parseFromString(xmlString, "text/xml");
+	//var out = Sarissa.serialize(oDomDoc);
+	var out = new XMLSerializer().serializeToString(oDomDoc);
+	alert(out);
+	document.getElementById('result').innerHTML = out;
+}
+
+</script>
+</head>
+
+<body>
+<h3>dynamisch xml-xsl vertalen mbv Sarissa ...</h3>
+<div id="result">hier gebeurt het ...</div>
+<form>
+  <input type="button" value="schone lei" onClick="cleardiv()" />
+  <input type="button" value="test Sarissa" onClick="testSarissa()" />
+  <input type="button" value="sorteren per adres-id" onClick="xmlView('adresboek_adresid.xsl')" />
+  <input type="button" value="sorteren per familienaam" onClick="xmlView('adresboek_famnaam.xsl')" />
+</form>
+</body>
+</html>

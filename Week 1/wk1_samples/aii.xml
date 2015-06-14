@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<aii xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:noNamespaceSchemaLocation="aii.xsd">
+  <kennisgebied richting="so">
+    <naam>Netwerken en Internet</naam>
+    <coordinator>
+      <docent>Rob Verhoef</docent>
+      <kamer>G555</kamer> 
+      <email/>
+    </coordinator>	     
+  </kennisgebied>
+</aii>

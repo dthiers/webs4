@@ -1,0 +1,8 @@
+D:\avans\modules\xml\2006_4\wk4\c#\xp_01\xp_01\obj\Debug\xp_01.exe
+D:\avans\modules\xml\2006_4\wk4\c#\xp_01\xp_01\obj\Debug\xp_01.pdb
+D:\avans\modules\xml\2006_4\wk4\c#\xp_01\xp_01\bin\Debug\xp_01.exe
+D:\avans\modules\xml\2006_4\wk4\c#\xp_01\xp_01\bin\Debug\xp_01.pdb
+D:\avans\modules\xml\2006_4\wk4\c#\xp_01\xp_01\obj\Debug\ResolveAssemblyReference.cache
+D:\avans\modules\xml\2006_4\wk4\c#\xp_01\xp_01\obj\Debug\xp_01.Form1.resources
+D:\avans\modules\xml\2006_4\wk4\c#\xp_01\xp_01\obj\Debug\xp_01.Properties.Resources.resources
+D:\avans\modules\xml\2006_4\wk4\c#\xp_01\xp_01\obj\Debug\xp_01.csproj.GenerateResource.Cache

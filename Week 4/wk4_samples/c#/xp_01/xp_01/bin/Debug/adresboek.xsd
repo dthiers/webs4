@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <!-- Definieer het root element adresboek -->
+  <xsd:element name="adresboek">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="persoon" type="persoonType"  maxOccurs="unbounded"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+
+  <!-- Definieer het elementtype persoonType -->
+  <xsd:complexType name="persoonType">
+    <xsd:sequence>
+      <xsd:element name="naam" type="naamType"/>
+      <xsd:element name="gebdat" type="geboortedatumType" minOccurs="0"/>
+      <xsd:element name="tel" type="xsd:string"/>
+      <xsd:element name="email" type="xsd:string" minOccurs="0"/>
+    </xsd:sequence>
+    <xsd:attribute name="adresid" type="xsd:integer" use="required"/>
+  </xsd:complexType>
+
+  <!-- Definieer het elementtype naamType -->
+  <xsd:complexType name="naamType">
+    <xsd:sequence>
+      <xsd:element name="voornaam" type="xsd:string"/>
+      <xsd:element name="famnaam" type="xsd:string"/>
+      <xsd:element name="bijnaam" type="xsd:string" minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <!-- Definieer het elementtype geboortedatumType -->
+  <xsd:complexType name="geboortedatumType">
+    <xsd:sequence>
+      <xsd:element name="dag" type="xsd:string"/>
+      <xsd:element name="maand" type="xsd:string"/>
+      <xsd:element name="jaar" type="xsd:string"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+</xsd:schema>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	
+	<xs:element name="order">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="date" type="xs:string"/>
+				<xs:element name="duedate" type="xs:string"/>
+				<xs:element name="invoice" type="xs:string"/>
+				<xs:element name="customer" type="customerType"/>
+				<xs:element name="lineitem" type="lineitemType" maxOccurs="unbounded"/>
+				<xs:element name="subtotal" type="naturalDecimal"/>
+				<xs:element name="tax" type="naturalDecimal"/>
+				<xs:element name="total" type="naturalDecimal"/>
+			</xs:sequence>
+			<xs:attribute name="status" type="statusType" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:complexType name="customerType">
+		<xs:sequence>
+			<xs:element name="company" type="xs:string"/>
+			<xs:element name="contact" type="xs:string"/>
+			<xs:element name="address" type="xs:string"/>
+			<xs:element name="postalcode" type="xs:string"/>
+			<xs:element name="city" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="lineitemType">
+		<xs:sequence>
+			<xs:element name="description" type="xs:string"/>
+			<xs:element name="price" type="naturalDecimal"/>
+			<xs:element name="quantity" type="positiveInteger"/>
+			<xs:element name="subtotal" type="naturalDecimal"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:simpleType name="statusType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="proposal"/>
+			<xs:enumeration value="order"/>
+			<xs:enumeration value="invoice"/>
+			<xs:enumeration value="first notice"/>
+			<xs:enumeration value="final notice"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:simpleType name="naturalDecimal">
+		<xs:restriction base="xs:decimal">
+			<xs:minInclusive value="0.00"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:simpleType name="positiveInteger">
+		<xs:restriction base="xs:integer">
+			<xs:minInclusive value="1"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+</xs:schema>

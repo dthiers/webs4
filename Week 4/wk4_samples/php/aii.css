@@ -1,0 +1,13 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial;
+  font-size: 14px;  
+}
+table {
+  //float: left;
+  //display: block: 20px;
+  margin-left: 0px;
+  font-size: 12px;  
+  background-color: rgb(191,191,255);
+}

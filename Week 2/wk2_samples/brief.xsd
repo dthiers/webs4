@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:element name="brief">
+  <xs:complexType mixed="true">
+    <xs:sequence>
+      <xs:element ref="groet"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+<xs:element name="groet">
+  <xs:complexType mixed="true">
+    <xs:choice>
+      <xs:element name="hallo"/>
+      <xs:element name="hi"/>
+      <xs:element name="allerbeste"/>
+    </xs:choice>
+  </xs:complexType>
+</xs:element>
+
+</xs:schema>

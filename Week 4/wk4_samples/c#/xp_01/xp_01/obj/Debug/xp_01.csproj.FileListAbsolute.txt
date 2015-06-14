@@ -1,0 +1,26 @@
+D:\avans\modules\xml\2008_4\slides\wk4\c#\xp_01\xp_01\obj\Debug\xp_01.exe
+D:\avans\modules\xml\2008_4\slides\wk4\c#\xp_01\xp_01\obj\Debug\xp_01.pdb
+D:\avans\modules\xml\2008_4\slides\wk4\c#\xp_01\xp_01\bin\Debug\xp_01.exe
+D:\avans\modules\xml\2008_4\slides\wk4\c#\xp_01\xp_01\bin\Debug\xp_01.pdb
+D:\avans\modules\xml\2008_4\slides\wk4\c#\xp_01\xp_01\obj\Debug\ResolveAssemblyReference.cache
+D:\avans\modules\xml\2008_4\slides\wk4\c#\xp_01\xp_01\obj\Debug\xp_01.Form1.resources
+D:\avans\modules\xml\2008_4\slides\wk4\c#\xp_01\xp_01\obj\Debug\xp_01.Properties.Resources.resources
+D:\avans\modules\xml\2008_4\slides\wk4\c#\xp_01\xp_01\obj\Debug\xp_01.csproj.GenerateResource.Cache
+d:\avans\modules\xml\2009_4\slides\wk4\c#\xp_01\xp_01\obj\Debug\xp_01.exe
+d:\avans\modules\xml\2009_4\slides\wk4\c#\xp_01\xp_01\obj\Debug\xp_01.pdb
+d:\avans\modules\xml\2009_4\slides\wk4\c#\xp_01\xp_01\bin\Debug\xp_01.exe
+d:\avans\modules\xml\2009_4\slides\wk4\c#\xp_01\xp_01\bin\Debug\xp_01.pdb
+d:\avans\modules\xml\2009_4\slides\wk4\c#\xp_01\xp_01\obj\Debug\ResolveAssemblyReference.cache
+d:\avans\modules\xml\2009_4\slides\wk4\c#\xp_01\xp_01\obj\Debug\xp_01.Form1.resources
+d:\avans\modules\xml\2009_4\slides\wk4\c#\xp_01\xp_01\obj\Debug\xp_01.Properties.Resources.resources
+d:\avans\modules\xml\2009_4\slides\wk4\c#\xp_01\xp_01\obj\Debug\xp_01.csproj.GenerateResource.Cache
+\\vmware-host\Shared Folders\Downloads\wk4\c#\xp_01\xp_01\obj\Debug\xp_01.exe
+\\vmware-host\Shared Folders\Downloads\wk4\c#\xp_01\xp_01\obj\Debug\xp_01.pdb
+\\vmware-host\Shared Folders\Downloads\wk4\c#\xp_01\xp_01\bin\Debug\xp_01.exe
+\\vmware-host\Shared Folders\Downloads\wk4\c#\xp_01\xp_01\bin\Debug\xp_01.pdb
+\\vmware-host\Shared Folders\Downloads\wk4\c#\xp_01\xp_01\obj\Debug\xp_01.csprojResolveAssemblyReference.cache
+\\vmware-host\Shared Folders\Downloads\wk4\c#\xp_01\xp_01\obj\Debug\xp_01.Form1.resources
+\\vmware-host\Shared Folders\Downloads\wk4\c#\xp_01\xp_01\obj\Debug\xp_01.Properties.Resources.resources
+\\vmware-host\Shared Folders\Downloads\wk4\c#\xp_01\xp_01\obj\Debug\xp_01.csproj.GenerateResource.Cache
+Z:\Documents\Avans\blokken\1213\4\XML\wk4_samples\c#\xp_01\xp_01\obj\Debug\xp_01.exe
+Z:\Documents\Avans\blokken\1213\4\XML\wk4_samples\c#\xp_01\xp_01\obj\Debug\xp_01.pdb
